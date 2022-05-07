@@ -1,0 +1,10 @@
+<h1>Elenco Completati: </h1>
+
+<div *ngFor="let item of todosService.getList(true); let index = index;"
+  class="row mt-1" style="height:100px;">
+  <div class="col-12 col-md-6 d-flex
+        justify-content-center align-items-center
+        text-light h3" id="divTask">
+      <span class="col-9 text-light h3">{{item.id}}) {{item.title}}</span>
+  </div>
+</div>
